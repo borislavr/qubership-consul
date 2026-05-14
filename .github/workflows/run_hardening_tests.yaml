@@ -39,7 +39,7 @@ jobs:
           workflow: dev_build.yml
           token: ${{ secrets.GITHUB_TOKEN }}
           poll-interval: 20
-  Consul-Pipeline:
+  Consul-Hardening-Scan:
     needs: Wait-for-images
     uses: Netcracker/qubership-test-pipelines/.github/workflows/consul.yaml@feature/apps-hardening-scan
     with:
